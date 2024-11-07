@@ -1,7 +1,19 @@
+<script setup>
+import { onMounted } from "vue";
+import { useFlowbite } from "./composable/useFlowbite";
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+  useFlowbite(() => {
+    initFlowbite();
+  });
+});
+</script>
+
 <template>
   <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow">
     <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sm:p-8"
     >
       <a
         href="https://flowbite.com/"
