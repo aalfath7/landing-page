@@ -1,20 +1,21 @@
 <template>
-  <section class="grid sm:grid-cols-3 space-x-5 space-y-10">
-    <div class="space-y-5">
-      <h2 class="text-3xl sm:text-4xl">About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error
-        laborum, dignissimos quod nesciunt corrupti rem similique expedita minus
-        deleniti repellat reiciendis voluptatum ex earum. Adipisci impedit
-        repudiandae alias laboriosam.
-      </p>
-    </div>
-    <div class="col-span-2 flex justify-center">
-      <img
-        src="https://www.quickanddirtytips.com/wp-content/uploads/2022/05/ezgif.com-gif-maker-3.jpg"
-        alt=""
-        class="rounded-lg w-96"
-      />
+  <section id="about" class="py-36">
+    <div class="grid sm:grid-cols-3 space-x-5 space-y-10">
+      <div class="space-y-5">
+        <h2 class="ml-10 text-3xl sm:text-4xl relative">
+          <span class="absolute top-0 -translate-x-10 -translate-y-3">__</span
+          >About Me
+        </h2>
+        <p class="text-lg text-gray-600">
+          I am a programmer experienced in working on both front-end and
+          back-end web application projects. I am interested in exploring the
+          latest technologies that enhance application performance and deliver
+          an attractive user interface.
+        </p>
+      </div>
+      <div class="col-span-2 flex justify-center">
+        <img src="/about.jpeg" alt="" class="w-full h-96 object-cover" />
+      </div>
     </div>
   </section>
 </template>

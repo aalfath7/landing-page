@@ -11,23 +11,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow">
+  <nav
+    class="bg-white border-gray-200 dark:bg-gray-900 shadow sticky top-0 w-full z-50"
+  >
     <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sm:p-8"
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
     >
-      <a
-        href="https://flowbite.com/"
-        class="flex items-center space-x-3 rtl:space-x-reverse"
-      >
-        <img
-          src="https://flowbite.com/docs/images/logo.svg"
-          class="h-8"
-          alt="Flowbite Logo"
-        />
-        <span
-          class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-          >Flowbite</span
-        >
+      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="/logo-projects.png" class="h-24" alt="Fath Logo" />
       </a>
       <button
         data-collapse-toggle="navbar-default"
@@ -59,36 +50,28 @@ onMounted(() => {
         >
           <li>
             <a
-              href="#"
-              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-              aria-current="page"
+              href="#top"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Home</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="#about"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >About</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="#portfolio"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Services</a
+              >Portfolio</a
             >
           </li>
           <li>
             <a
-              href="#"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Pricing</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
+              href="#contact"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Contact</a
             >

@@ -1,6 +1,8 @@
 <template>
   <Jumbotron />
-  <div class="p-5 sm:p-36 py-20 space-y-10">
+  <div class="px-5 sm:px-36 py-5 space-y-10">
     <About />
+    <Portfolio />
+    <Contact />
   </div>
 </template>
