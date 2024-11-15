@@ -1,26 +1,30 @@
 <template>
-  <section id="portfolio" class="py-36">
-    <h2 class="text-end text-3xl sm:text-4xl relative">
-      <span class="absolute top-0 -translate-x-10 -translate-y-3">__</span>
+  <section id="portfolio" class="py-36 px-5">
+    <h2 class="text-end text-3xl sm:text-4xl relative text-white">
+      <span class="text-white absolute top-0 -translate-x-10 -translate-y-3"
+        >__</span
+      >
       Portfolio
     </h2>
     <div class="grid sm:grid-cols-3 gap-20 py-10">
       <div
-        v-for="item in data"
-        class="bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700"
+        v-for="(item, index) in data"
+        data-aos="fade-down"
+        :data-aos-delay="index * 50 + 50"
+        class="bg-white border border-gray-200 shadow"
       >
-        <a href="#">
+        <a :href="item.link" target="_blank">
           <img class="rounded-t-lg" :src="item.img" alt="" />
         </a>
         <div class="p-5">
           <a href="#">
-            <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-            >
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
               {{ item.title }}
             </h5>
           </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p
+            class="mb-3 font-normal text-gray-600 dark:text-gray-400 line-clamp-3"
+          >
             {{ item.desc }}
           </p>
         </div>
@@ -32,19 +36,22 @@
 <script setup>
 const data = [
   {
-    title: "EduTajwid",
+    title: "edutajwid.com",
     desc: "An interactive Tajweed learning website. A Tajweed learning website for children, teenagers, and adults with engaging lessons.",
-    img: "/project-1.png",
+    img: "/edutajwid.png",
+    link: "https://edutajwid.com",
   },
   {
-    title: "EduTajwid",
-    desc: "An interactive Tajweed learning website. A Tajweed learning website for children, teenagers, and adults with engaging lessons.",
-    img: "/project-1.png",
+    title: "auladianaindonesia.sch.id",
+    desc: "A school profile website showcasing the school's profile, news, registration features, and additional sections such as academic programs, student achievements, and contact information.",
+    img: "/auladina.png",
+    link: "https://auladinaindonesia.sch.id",
   },
   {
-    title: "EduTajwid",
-    desc: "An interactive Tajweed learning website. A Tajweed learning website for children, teenagers, and adults with engaging lessons.",
-    img: "/project-1.png",
+    title: "racikalcencekia.sch.id",
+    desc: "Cikal Cendekia Islamic School is an Islamic Fullday School that integrates the National Curriculum with Islamic values, focusing on developing students' noble character and integrity. The school offers a Qur'an memorization program and various extracurricular activities, such as drumband and calligraphy, to support students' talent development.",
+    img: "/racikal.png",
+    link: "https://racikalcendekia.sch.id",
   },
 ];
 </script>

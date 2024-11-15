@@ -6,3 +6,17 @@
     <Contact />
   </div>
 </template>
+
+<script setup>
+useHead({
+  title: "fath | All About Me",
+  meta: [{ name: "frontend developer", content: "My amazing site." }],
+});
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+onMounted(() => {
+  AOS.init();
+});
+</script>

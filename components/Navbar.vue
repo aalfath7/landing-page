@@ -12,10 +12,10 @@ onMounted(() => {
 
 <template>
   <nav
-    class="bg-white border-gray-200 dark:bg-gray-900 shadow sticky top-0 w-full z-50"
+    class="border-gray-200 dark:bg-gray-900 shadow sticky top-0 w-full z-50 bg-stone-200"
   >
     <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2"
     >
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="/logo-projects.png" class="h-24" alt="Fath Logo" />
@@ -43,10 +43,27 @@ onMounted(() => {
             d="M1 1h15M1 7h15M1 13h15"
           />
         </svg>
+        <!-- <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18 17.94 6M18 18 6.06 6"
+          />
+        </svg> -->
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
             <a

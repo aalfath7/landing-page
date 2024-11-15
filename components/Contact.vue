@@ -1,14 +1,14 @@
 <template>
   <section id="contact" class="py-20">
-    <div class="text-center py-20 sm:px-44 space-y-10 bg-gray-100">
+    <div class="text-center py-20 sm:px-44 space-y-10 bg-gray-300">
       <p class="text-3xl sm:text-4xl">
         If you're <b>interested</b> in <b>collaborating</b>,<br
           class="hidden sm:block"
         />
         please don't hesitate to <b>contact me</b>.
       </p>
-      <button
-        type="button"
+      <NuxtLink
+        to="mailto:abdillahalfath7@gmail.com"
         class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
       >
         Contact
@@ -27,7 +27,7 @@
             d="M1 5h12m0 0L9 1m4 4L9 9"
           />
         </svg>
-      </button>
+      </NuxtLink>
     </div>
   </section>
 </template>
